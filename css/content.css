@@ -1,0 +1,93 @@
+main {
+    width: 66.666667%;
+    border-left: 2px solid black;
+}
+
+/* main p::first-letter {
+    font-size: 200%;
+    font-weight: bolder;
+    color: orange; }*/
+
+
+.add-new {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.add-new button {
+    font-size: 1.5rem;
+    padding: 0.215rem 0.575rem 0.425rem 0.5rem;
+    
+
+    position: relative;
+    bottom: 0.275rem;
+    right: -0.275rem;
+
+    border-radius: 0.3rem;
+} 
+
+.add-new button:hover,
+.add-new button:active {
+    background: rgb(55,65,81);
+
+}
+
+/* titels */
+h1.today  {
+    color: rgb(var(--color-today));
+    display: block;
+}
+h1.scheduled  {
+    color: rgb(239,68,68);
+    
+}
+h1.all {
+    color: rgb(113, 120, 132);
+    
+} 
+h1.flagged{
+    color: rgb(245,158,11);
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-family: "Arial Rounded MT bold", "Varela Round", "Helvetica Rounded", Arial, sans-serif;
+    margin-bottom: 0.725rem;
+    display: none;
+}
+
+/* todos */
+.todos p {
+    padding: 0.625rem 0;
+    border-bottom: 1px solid rgb(55, 65, 81);
+    flex-grow: 1; /* čára do konce řádku */
+}
+
+.todos svg {
+    width: 2rem;
+    height: 2rem;
+    /* background: #bada55; */
+    flex: none;
+
+    stroke: rgb(28, 34, 43);
+    stroke-width: 1;
+
+    fill: rgb(55, 65, 81);
+
+    cursor: pointer;
+
+    margin-top: 0.225rem;
+    margin-right: 0.225rem;
+    
+}
+
+.todos li {
+    display: flex;
+    line-height: 1.25;
+}
+
+.todos svg:hover,
+.todos svg:active {
+    fill: rgb(251, 191, 36);
+}
